@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "cypress": "^14.5.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "dotenv": "^17.0.1",
+    "mochawesome": "^7.1.3"
+  },
+  "scripts": {
+    "cypress:open": "npx cypress open",
+    "test:signup": "npx cypress run --spec cypress/e2e/smoke/signup.cy.js",
+    "test:login": "npx cypress run --spec cypress/e2e/smoke/login.cy.js",
+    "test:notes": "npx cypress run --spec cypress/e2e/regression/notes.cy.js",
+    "test:smoke": "npx cypress run --spec \"cypress/e2e/smoke/*.cy.js\"",
+    "test:regression": "npx cypress run --spec \"cypress/e2e/regression/*.cy.js\"",
+    "test:all": "npx cypress run"
+  }
+}
